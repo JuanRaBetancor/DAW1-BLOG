@@ -17,8 +17,18 @@
   </div>
 
   <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, id: :article_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :except %>
+    <%= form.text_field :except, id: :article_except %>
+  </div>
+
+  <div class="field">
     <%= form.label :body %>
-    <%= form.text_field :body, id: :article_body %>
+    <%= form.text_area :body, id: :article_body %>
   </div>
 
   <div class="field">
